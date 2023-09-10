@@ -116,7 +116,7 @@
       </div>
     </div>
   </section>
-  <div class="grid grid-cols-4" id="product-container"></div>
+  <div class="grid md:grid-cols-4 mx-6" id="product-container"></div>
   <!-- End of Production Section -->
   <section id="services" class="py-8 mt-14 bg-gray-100">
     <div class="container mx-auto">
@@ -178,105 +178,62 @@
     // Product data as a JSON array
     const products = [
       {
-        "name": "Product 1",
-        "description": "Description for Product 1. Lorem ipsum dolor sit amet.",
-        "price": 0.00,
+        "name": "Laziz Vegetable Oil 1L",
         "image": "images/products/a.png"
       }, {
-        "name": "Product 2",
-        "description": "Description for Product 1. Lorem ipsum dolor sit amet.",
-        "price": 0.00,
+        "name": "Laziz Vegetable Oil 1.6L",
         "image": "images/products/b.png"
       }, {
-        "name": "Product 3",
-        "description": "Description for Product 1. Lorem ipsum dolor sit amet.",
-        "price": 0.00,
+        "name": "Laziz Vegetable Oil 3L",
         "image": "images/products/c.png"
       }, {
-        "name": "Product 4",
-        "description": "Description for Product 1. Lorem ipsum dolor sit amet.",
-        "price": 0.00,
+        "name": "Laziz Vegetable Oil 5L",
         "image": "images/products/d.png"
       }, {
-        "name": "Product 5",
-        "description": "Description for Product 1. Lorem ipsum dolor sit amet.",
-        "price": 0.00,
+        "name": "Winners Soya Oil 3L",
         "image": "images/products/e.png"
       }, {
-        "name": "Product 6",
-        "description": "Description for Product 1. Lorem ipsum dolor sit amet.",
-        "price": 0.00,
+        "name": "Winners Soya Oil 5L",
         "image": "images/products/f.png"
       }, {
-        "name": "Product 7",
-        "description": "Description for Product 1. Lorem ipsum dolor sit amet.",
-        "price": 0.00,
+        "name": "Active Gold Vegetable Oil 5L",
         "image": "images/products/g.png"
       }, {
-        "name": "Product 8",
-        "description": "Description for Product 1. Lorem ipsum dolor sit amet.",
-        "price": 0.00,
+        "name": "La Mayo 946g",
         "image": "images/products/h.png"
       },
       {
-        "name": "Product 9",
-        "description": "Description for Product 1. Lorem ipsum dolor sit amet.",
-        "price": 0.00,
+        "name": "La Mayo 473g",
         "image": "images/products/i.png"
       }, {
-        "name": "Product 10",
-        "description": "Description for Product 1. Lorem ipsum dolor sit amet.",
-        "price": 0.00,
+        "name": "Laziz Mayonnaise 946g",
         "image": "images/products/j.png"
       }, {
-        "name": "Product 11",
-        "description": "Description for Product 1. Lorem ipsum dolor sit amet.",
-        "price": 0.00,
+        "name": "Laziz Mayonnaise 473g",
         "image": "images/products/k.png"
       }, {
-        "name": "Product 12",
-        "description": "Description for Product 1. Lorem ipsum dolor sit amet.",
-        "price": 0.00,
-        "image": "images/products/l.png"
-      }, {
-        "name": "Product 13",
-        "description": "Description for Product 1. Lorem ipsum dolor sit amet.",
-        "price": 0.00,
+        "name": "Laziz Thousand Island",
         "image": "images/products/m.png"
       }, {
-        "name": "Product 14",
-        "description": "Description for Product 1. Lorem ipsum dolor sit amet.",
-        "price": 0.00,
+        "name": "Laziz Ketchup 300g",
         "image": "images/products/n.png"
       }, {
-        "name": "Product 15",
-        "description": "Description for Product 1. Lorem ipsum dolor sit amet.",
-        "price": 0.00,
+        "name": "Laziz Ketchup 500g",
         "image": "images/products/o.png"
       }, {
-        "name": "Product 16",
-        "description": "Description for Product 1. Lorem ipsum dolor sit amet.",
-        "price": 0.00,
+        "name": "Laziz Venegar",
         "image": "images/products/p.png"
       }, {
-        "name": "Product 17",
-        "description": "Description for Product 1. Lorem ipsum dolor sit amet.",
-        "price": 0.00,
+        "name": "Laziz Salad Cream",
         "image": "images/products/q.png"
       }, {
-        "name": "Product 18",
-        "description": "Description for Product 1. Lorem ipsum dolor sit amet.",
-        "price": 0.00,
+        "name": "Laziz Custard",
         "image": "images/products/r.png"
       }, {
-        "name": "Product 19",
-        "description": "Description for Product 1. Lorem ipsum dolor sit amet.",
-        "price": 0.00,
+        "name": "Laziz Custard",
         "image": "images/products/s.png"
       }, {
-        "name": "Product 20",
-        "description": "Description for Product 1. Lorem ipsum dolor sit amet.",
-        "price": 0.00,
+        "name": "Laziz Custard",
         "image": "images/products/t.png"
       }, // {
       //   "name": "Product 21",
@@ -285,14 +242,10 @@
       //   "image": "images/products/u.png"
       // }, 
       {
-        "name": "Product 22",
-        "description": "Description for Product 1. Lorem ipsum dolor sit amet.",
-        "price": 0.00,
+        "name": "Go Grain Kelloggs",
         "image": "images/products/v.png"
       }, {
-        "name": "Product 23",
-        "description": "Description for Product 1. Lorem ipsum dolor sit amet.",
-        "price": 0.00,
+        "name": "Go Grain Kellogg",
         "image": "images/products/w.png"
       },
       // Add more product objects as needed
@@ -322,13 +275,10 @@
         description.className = 'product-description';
         description.textContent = product.description;
 
-        const price = document.createElement('p');
-        price.className = 'product-price';
-        price.textContent = `N${product.price.toFixed(2)}`;
 
         productInfo.appendChild(title);
         productInfo.appendChild(description);
-        productInfo.appendChild(price);
+
 
         card.appendChild(image);
         card.appendChild(productInfo);
